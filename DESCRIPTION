@@ -1,0 +1,9 @@
+Package: workflows
+Title: LSP Datarail Workflows
+Version: 0.1
+Authors@R: person( "Artem", "Sokolov", email="artem.sokolov@gmail.com", role = c("aut","cre") )
+Description: A collection of data analysis workflows for common tasks at the LSP
+Depends: R (>= 3.3.2)
+License: MIT
+URL: https://github.com/datarail/workflows
+BugReports: https://github.com/datarail/workflows/issues
