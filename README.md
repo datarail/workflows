@@ -12,5 +12,8 @@ While individual workflows can be run independently, it is strongly recommended 
 The following workflows are centered around Digital Gene Expression data analysis:
 
 * Aligning FASTQ files to the reference genome is detailed in a separate datarail repo: https://github.com/datarail/rnaseq
-* After aligning raw reads, the next step is typically converting the counts table to a proper genes-by-samples format (vignette in development).
+* After aligning raw reads, the next step is typically converting the counts table to a proper genes-by-samples format.
 * One of the first things to do a dataset is to perform Principal Components Analysis (PCA) and plot the resulting projection(s).
+* [In development] Differential expression
+* [In development] Gene Set Enrichment Analysis
+

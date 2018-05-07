@@ -11,7 +11,8 @@
 #' @param vignLabel A short label specifying which vignette to get the data for. See Details.
 #' @details Use the following values for \strong{vignLabel} to designate which dataset to load:
 #' \describe{
-#'   \item{"dge-pca"}{ Data for the vignette that demonstrates how to apply Principal Components
+#'   \item{"dge-wrangle"}{Example output from bcbio that is used by the DGE wrangling vignette}
+#'   \item{"dge-pca"}{Data for the vignette that demonstrates how to apply Principal Components
 #'                  Analysis to a counts matrix from a DGE experiment}
 #' }
 #' @export
@@ -19,7 +20,19 @@ getData <- function( vignLabel )
 {
     dir.create( "data", showWarnings = FALSE )
 
-    if( vignLabel == "dge-pca" )
+    if( vignLabel == "dge-wrangle" )
+    {
+        ## Define the destination directory on a local disk
+        ## Create it if it doesn't exist
+        d <- "data/dge-wrangle"
+        dir.create( d, showWarnings = FALSE )
+
+        ## Download individual files to the local directory
+        synapseClient::synapseLogin( rememberMe=TRUE )
+        for( f in c( "syn12184051", "syn12184052", "syn12184053", "syn12184049" ) )
+            synapseClient::synGet( f, downloadLocation = d )
+    }
+    else if( vignLabel == "dge-pca" )
     {
         ## Define the destination directory on a local disk
         ## Create it if it doesn't exist

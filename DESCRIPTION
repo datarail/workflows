@@ -10,6 +10,8 @@ Depends: R (>= 3.3.2)
 Imports:
     tidyverse,
     synapseClient,
-    GGally
-Remotes: Sage-Bionetworks/rSynapseClient
+    annotables
+Remotes:
+    Sage-Bionetworks/rSynapseClient,
+    stephenturner/annotables
 RoxygenNote: 6.0.1

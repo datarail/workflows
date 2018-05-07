@@ -17,7 +17,8 @@ All data is downloaded into a local data/ directory
 
 Use the following values for \strong{vignLabel} to designate which dataset to load:
 \describe{
-  \item{"dge-pca"}{ Data for the vignette that demonstrates how to apply Principal Components
+  \item{"dge-wrangle"}{Example output from bcbio that is used by the DGE wrangling vignette}
+  \item{"dge-pca"}{Data for the vignette that demonstrates how to apply Principal Components
                  Analysis to a counts matrix from a DGE experiment}
 }
 }
