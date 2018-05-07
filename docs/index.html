@@ -84,9 +84,9 @@
 <div id="installation-instructions" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation-instructions" class="anchor"></a>Installation instructions</h2>
-<p>While individual workflows can be run independently, it is strongly recommended to install the R package associated with this repository. The package will automatically install all the necessary dependencies and provide a <code><a href="reference/getData.html">getData()</a></code> function that can be used to quickly retrieve the example datasets used by individual workflows. To install the package, simply run the following commands in your R shell:</p>
-<div class="sourceCode"><pre class="sourceCode R"><code class="sourceCode r">if( !<span class="kw">require</span>(devtools) ) <span class="kw">install.packages</span>( <span class="st">"devtools"</span> )
-devtools::<span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>( <span class="st">"datarail/workflows"</span> )</code></pre></div>
+<p>While individual workflows can be run independently, it is strongly recommended to install the R package associated with this repository. The package will automatically install all the necessary dependencies and provide a <code>getData()</code> function that can be used to quickly retrieve the example datasets used by individual workflows. To install the package, simply run the following commands in your R shell:</p>
+<div class="sourceCode"><pre class="sourceCode R"><code class="sourceCode r"><span class="cf">if</span>( <span class="op">!</span><span class="kw">require</span>(devtools) ) <span class="kw">install.packages</span>( <span class="st">"devtools"</span> )
+devtools<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/devtools/topics/install_github">install_github</a></span>( <span class="st">"datarail/workflows"</span> )</code></pre></div>
 </div>
 <div id="digital-gene-expression" class="section level2">
 <h2 class="hasAnchor">
@@ -132,14 +132,15 @@ devtools::<span class="kw"><a href="http://www.rdocumentation.org/packages/devto
 
 
       <footer><div class="copyright">
-<!-- <img src="images/LSP_Horiz-Logo.jpg" style="float:left;height:75px;margin:0px 10px"> -->
-<p>This vignette is a part of the <a href="https://github.com/datarail/workflows">"LSP analysis workflows"</a> GitHub repo.<br><b>Authors:</b> Artem Sokolov<br>
-Laboratory of Systems Pharmacology<br>
-Havard Medical School<br></p>
+  <p><img src="http://hits.harvard.edu/wp-content/uploads/2013/10/title_program_lsp1.png" height="50px"></p>
+  
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
+  <p>This vignette is a part of
+    the <a href="https://github.com/datarail/workflows">"LSP analysis
+      workflows"</a> GitHub repo.<br>
+  Site built with <a href="http://pkgdown.r-lib.org/">pkgdown</a>.</p>
 </div>
       </footer>
 </div>
