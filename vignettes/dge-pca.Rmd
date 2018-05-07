@@ -125,8 +125,3 @@ or look at other principal components.
 ggplot( RR, aes( x = .fittedPC3, y = .fittedPC4, color = Drug, shape = Time ) ) +
     geom_point( size = 3 ) + mylabels(3,4)
 ```
-
-Using `ggpairs` function from the `GGally` package, we can also look at multiple principal components at the same time.
-```{r}
-GGally::ggpairs( RR, aes( color = Drug ), columns = c( ".fittedPC1", ".fittedPC2", ".fittedPC3" ) )
-```

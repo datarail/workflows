@@ -8,9 +8,10 @@
 #'
 #' All data is downloaded into a local data/ directory
 #'
-#' @param vignLabel A short label specifying which vignette to get the data for:
+#' @param vignLabel A short label specifying which vignette to get the data for. See Details.
+#' @details Use the following values for \strong{vignLabel} to designate which dataset to load:
 #' \describe{
-#'   \item{"dge-pca"}{- Data for the vignette that demonstrates how to apply Principal Components
+#'   \item{"dge-pca"}{ Data for the vignette that demonstrates how to apply Principal Components
 #'                  Analysis to a counts matrix from a DGE experiment}
 #' }
 #' @export

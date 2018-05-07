@@ -7,15 +7,17 @@
 getData(vignLabel)
 }
 \arguments{
-\item{vignLabel}{A short label specifying which vignette to get the data for:
-\describe{
-  \item{"dge-pca"}{- Data for the vignette that demonstrates how to apply Principal Components
-                 Analysis to a counts matrix from a DGE experiment}
-}}
+\item{vignLabel}{A short label specifying which vignette to get the data for. See Details.}
 }
 \description{
 Downloads relevant data for individual workflow vignettes, usually from Synapse
 }
 \details{
 All data is downloaded into a local data/ directory
+
+Use the following values for \strong{vignLabel} to designate which dataset to load:
+\describe{
+  \item{"dge-pca"}{ Data for the vignette that demonstrates how to apply Principal Components
+                 Analysis to a counts matrix from a DGE experiment}
+}
 }
